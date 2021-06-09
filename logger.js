@@ -15,3 +15,5 @@ class Logger {
     this.log('[Error]', ...args);
   }
 }
+
+export default Logger;
