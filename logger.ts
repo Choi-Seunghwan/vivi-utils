@@ -1,5 +1,5 @@
 class Logger {
-  log(type, args) {
+  log(type, ...args) {
     console.log(`${type}`, ...args);
   }
 
@@ -16,4 +16,4 @@ class Logger {
   }
 }
 
-export default Logger;
+export default new Logger();
