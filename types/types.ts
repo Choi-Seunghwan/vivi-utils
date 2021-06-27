@@ -9,9 +9,8 @@ export interface Room {
 }
 
 export interface AccountInfo {
-  accountId: number;
+  username: string;
   nickname: string;
-  connectionInfo?: ConnectionInfo;
 }
 export interface ConnectionInfo {
   socket: any;
