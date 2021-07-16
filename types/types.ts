@@ -7,11 +7,6 @@ export interface Room {
   creatorDescriptionOffer?;
   creatorSocketId?;
 }
-
-export interface AccountInfo {
-  username: string;
-  nickname: string;
-}
 export interface ConnectionInfo {
   socket: any;
   socketId: string;
@@ -19,11 +14,6 @@ export interface ConnectionInfo {
 
 export interface SocketReplyMessage {
   method: string;
-  errorCode: string;
-  result: any;
-}
-export interface ServiceResultRes {
-  description: string;
   errorCode: string;
   result: any;
 }
