@@ -1,4 +1,4 @@
-import { STATUS_SUCCESS, STATUS_ERROR, DEFAULT_SUCCESS, DEFAULT_ERROR } from '@/utils/constatns';
+import { STATUS_SUCCESS, STATUS_ERROR, DEFAULT_SUCCESS, DEFAULT_ERROR } from '../constants';
 
 export class ServiceResultRes {
   public description: string;
