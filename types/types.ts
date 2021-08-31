@@ -2,11 +2,16 @@ export interface Room {
   roomId: string;
   memberCount: number;
   title: string;
-  accountId: string;
   channelName: string;
-  creatorDescriptionOffer?;
-  creatorSocketId?;
+  roomCreatorInfo: RoomCreatorInfo;
 }
+
+export interface RoomCreatorInfo {
+  accountId: string;
+  desc: string;
+  socketId: string;
+}
+
 export interface ConnectionInfo {
   socket: any;
   socketId: string;
