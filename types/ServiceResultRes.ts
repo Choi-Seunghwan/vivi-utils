@@ -3,20 +3,20 @@ import { STATUS_SUCCESS, STATUS_ERROR, DEFAULT_SUCCESS, DEFAULT_ERROR } from '..
 export class ServiceResultRes {
   public description: string;
   public statusCode: string;
-  public errorCode: string;
+  public resultCode: string;
   public result: any;
 
   constructor() {
     this.description = '';
     this.statusCode = '';
-    this.errorCode = '';
+    this.resultCode = '';
     this.result = {};
   }
 
-  makeRes({ result = {}, statusCode = '', errorCode = '', description = '' } = {}) {
+  makeRes({ result = {}, statusCode = '', resultCode = '', description = '' } = {}) {
     this.result = result;
     this.statusCode = statusCode;
-    this.errorCode = errorCode;
+    this.resultCode = resultCode;
     this.description = description;
   }
 
@@ -24,10 +24,10 @@ export class ServiceResultRes {
    * Success Res
    */
 
-  makeSuccess(result = {}, statusCode = STATUS_SUCCESS, errorCode = DEFAULT_SUCCESS, description = '') {
+  makeSuccess({ result = {}, statusCode = STATUS_SUCCESS, resultCode = DEFAULT_SUCCESS, description = '' } = {}) {
     this.result = result;
     this.statusCode = statusCode;
-    this.errorCode = errorCode;
+    this.resultCode = resultCode;
     this.description = description;
   }
 
@@ -35,10 +35,10 @@ export class ServiceResultRes {
    * Error Res
    */
 
-  makeError(result = {}, statusCode = STATUS_ERROR, errorCode = DEFAULT_ERROR, description = '') {
+  makeError({ result = {}, statusCode = STATUS_ERROR, resultCode = DEFAULT_ERROR, description = '' } = {}) {
     this.result = result;
     this.statusCode = statusCode;
-    this.errorCode = errorCode;
+    this.resultCode = resultCode;
     this.description = description;
   }
 }

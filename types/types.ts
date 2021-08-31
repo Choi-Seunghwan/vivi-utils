@@ -19,8 +19,10 @@ export interface ConnectionInfo {
 
 export interface SocketReplyMessage {
   method: string;
-  errorCode: string;
   result: any;
+  statusCode: string;
+  resultCode: string;
+  description?: string;
 }
 
 export interface ChatMessage {
