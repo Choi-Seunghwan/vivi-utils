@@ -8,7 +8,6 @@ export interface Room {
 
 export interface RoomCreatorInfo {
   accountId: string;
-  desc: string;
   socketId: string;
 }
 
