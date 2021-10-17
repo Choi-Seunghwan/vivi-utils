@@ -1,3 +1,3 @@
 export * from './types';
 export * from './ServiceResultRes';
-export * from './account';
+export * from './Account';
