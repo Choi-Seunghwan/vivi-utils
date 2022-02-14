@@ -1,14 +1,28 @@
 export interface Room {
-  roomId: string;
-  memberCount: number;
+  roomId: number;
   title: string;
-  channelName: string;
-  roomCreatorInfo: RoomCreatorInfo;
+  roomKey: string;
+  connectionType: connectionType;
+  roomHost: RoomHost;
+  members: Member[];
 }
 
-export interface RoomCreatorInfo {
-  accountId: string;
+export interface RoomInfo {
+  roomId: number;
+  title: string;
+  roomKey: string;
+  connectionType: connectionType;
+  roomHost: RoomHost;
+}
+
+export type connectionType = 'P2P' | 'SFU';
+
+export interface RoomHost extends Member {}
+
+export interface Member {
+  accountId: number;
   socketId: string;
+  nickname: string;
 }
 
 export interface ConnectionInfo {

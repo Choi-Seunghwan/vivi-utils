@@ -19,7 +19,7 @@ export const LOGIN_FAIL = 'LOGIN_FAIL';
  * Room Status Code
  */
 
-export const ROOM_CREATOR_JOIN = 'ROOM_CREATOR_JOIN';
-export const ROOM_CREATOR_OUT = 'ROOM_CREATOR_OUT';
-export const ROOM_GUEST_JOIN = 'ROOM_GUEST_OUT';
-export const ROOM_GUEST_OUT = 'ROOM_CREATOR_OUT';
+export const ROOM_JOIN = 'ROOM_JOIN';
+export const ROOM_OUT = 'ROOM_OUT';
+export const ROOM_GUEST_JOIN = 'ROOM_GUEST_JOIN';
+export const ROOM_GUEST_OUT = 'ROOM_GUEST_OUT';
