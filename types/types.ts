@@ -1,3 +1,5 @@
+import { PeerConnection } from '@/modules/PeerConnection';
+
 export interface Room {
   roomId: number;
   title: string;
@@ -7,27 +9,14 @@ export interface Room {
   members: Member[];
 }
 
-export interface RoomInfo {
-  roomId: number;
-  title: string;
-  roomKey: string;
-  connectionType: connectionType;
-  roomHost: RoomHost;
-}
-
 export type connectionType = 'P2P' | 'SFU';
 
 export interface RoomHost extends Member {}
-
 export interface Member {
   accountId: number;
   socketId: string;
   nickname: string;
-}
-
-export interface ConnectionInfo {
-  socket: any;
-  socketId: string;
+  peerConnection?: PeerConnection;
 }
 
 export interface SocketReplyMessage {
@@ -39,7 +28,6 @@ export interface SocketReplyMessage {
 }
 
 export interface ChatMessage {
-  senderInfo: any;
-  content: string;
-  dateTime: number;
+  member: Member;
+  message: string;
 }
