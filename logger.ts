@@ -4,15 +4,15 @@ class Logger {
   }
 
   debug(...args) {
-    this.log("[Debug]", ...args);
+    this.log('[Debug]', ...args);
   }
 
   info(...args) {
-    this.log("[Info]", ...args);
+    this.log('[Info]', ...args);
   }
 
   error(...args) {
-    this.log("[Error]", ...args);
+    this.log('[Error]', ...args);
   }
 }
 
