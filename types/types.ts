@@ -1,4 +1,4 @@
-import { PeerConnection } from "@/modules/PeerConnection";
+import type { PeerConnection } from '@/modules/PeerConnection';
 
 export interface Room {
   roomId: number;
@@ -9,14 +9,14 @@ export interface Room {
   members: Member[];
 }
 
-export type connectionType = "P2P" | "SFU";
+export type connectionType = 'P2P' | 'SFU';
 
 export interface RoomHost extends Member {}
 export interface Member {
   accountId: number;
   socketId: string;
   nickname: string;
-  peerConnection?: PeerConnection;
+  peerConnection: PeerConnection;
 }
 
 export interface SocketReplyMessage {
