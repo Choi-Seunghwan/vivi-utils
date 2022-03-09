@@ -19,15 +19,18 @@ export interface Member {
   peerConnection: PeerConnection;
 }
 
+export interface ChatMessage {
+  member: Member;
+  message: string;
+}
+
+/**
+ * socket 응답 메세지 양식
+ */
 export interface SocketReplyMessage {
   method: string;
   result: any;
   statusCode: string;
   resultCode: string;
   description?: string;
-}
-
-export interface ChatMessage {
-  member: Member;
-  message: string;
 }

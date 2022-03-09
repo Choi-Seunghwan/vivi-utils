@@ -1,3 +1,7 @@
+/**
+ * Server 와 Service 간에 통신을 위한 메세지 양식
+ */
+
 import { STATUS_SUCCESS, STATUS_ERROR, DEFAULT_SUCCESS, DEFAULT_ERROR } from '../constants';
 
 export class ServiceResultRes {

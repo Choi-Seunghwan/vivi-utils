@@ -1,8 +1,7 @@
 export * from './statusCode';
 export * from './resultCode';
 export * from './webSocketMethod';
-
-export const GUEST_ACCOUNT = 'guestAccount';
+export const GUEST_ACCOUNT = 'Guest';
 
 export const ROOM_KEY = 'ROOM-';
 export const ROOM_TYPE_BROADCAST = 'ROOM_TYPE_BROADCAST';

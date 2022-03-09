@@ -7,7 +7,7 @@ export const DEFAULT_SUCCESS = 'DEFAULT_SUCCESS';
 export const DEFAULT_ERROR = 'DEFAULT_ERROR';
 
 /**
- * Account Status Code
+ * Auth Status Code
  */
 
 export const SIGNIN_SUCCESS = 'SIGNIN_SUCCESS';
