@@ -11,4 +11,5 @@ export interface Account {
   email?: string;
   crateDatetime?: number;
   updateDatetime?: number;
+  connectionId?: string; // socket Id. socket과 연결 시  생성
 }

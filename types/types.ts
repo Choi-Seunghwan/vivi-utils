@@ -9,6 +9,8 @@ export interface Room {
   members: Member[];
 }
 
+export type roomTag = 'talk' | 'song' | 'date';
+
 export type connectionType = 'P2P' | 'SFU';
 
 export interface RoomHost extends Member {}
