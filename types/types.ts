@@ -7,9 +7,11 @@ export interface Room {
   connectionType: connectionType;
   roomHost: RoomHost;
   members: Member[];
+  // roomTags: roomTag[]; 추후, 여러개의 태그 사용 가능하도록
+  roomTag: roomTag;
 }
 
-export type roomTag = 'talk' | 'song' | 'date';
+export type roomTag = 'TALK' | 'SONG' | 'DATE' | '';
 
 export type connectionType = 'P2P' | 'SFU';
 
